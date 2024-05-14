@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contenedor {
+    max-width: 50%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  section h1 {
+    font-size: 2rem;
+    color: #eaff6a;
+    margin-bottom: 30px;
+  }
+  
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
