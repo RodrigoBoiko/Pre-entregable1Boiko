@@ -28,3 +28,51 @@ let maquinaResultado2 = maquinaResultado1 + maquinaNaipe3;
 
 alert('Tu primera carta es ' + jugadorNaipe1);
 alert('Tu siguiente carta es ' + jugadorNaipe2);
+
+let opcionJugador = prompt('Hasta ahora tienes ' + jugadorResultado1 + '\n ¿Eliges Plantarte: 0 o Continuar : 1?', '0');
+
+//R: el jugador se planta o continúa?
+ if (opcionJugador == 0) {
+ 	alert('Te plantaste en ' + jugadorResultado1 + '\n La máquina se plantó en ' + maquinaResultado1);
+
+ 	if (jugadorResultado1 == 21) {
+ 		alert('BlackJack!');
+ 	}
+ 	else if (jugadorResultado1 == maquinaResultado1) {
+ 		alert('Hay un empate!');
+ 	}
+ 	else if (jugadorResultado1 > 21) {
+ 		alert('Perdiste el juego!');
+ 	}
+ 	else if(jugadorResultado1 < 21 && jugadorResultado1 > maquinaResultado1){
+ 		alert('Ganaste!');
+ 	}
+ 	else if(jugadorResultado1 < 21 && jugadorResultado1 < maquinaResultado1 && maquinaResultado1 <= 21){
+ 		alert('Perdiste el juego!');
+ 	}
+ 	else if(jugadorResultado1 < 21 && jugadorResultado1 < maquinaResultado1 && maquinaResultado1 > 21){
+ 		alert('Ganaste!');
+ 	}
+ }
+ else if (opcionJugador == 1) 
+ 	alert('Tu última carta es ' + jugadorNaipe3);
+ 	alert('Ahora sumaste un total de ' + jugadorResultado2 + '\n La máquina sumó un total de ' + maquinaResultado2);
+
+ 	if (jugadorResultado2 == 21) {
+ 		alert('BlackJack!');
+ 	}
+ 	else if (jugadorResultado2 == maquinaResultado2) {
+ 		alert('Hay un empate!');
+ 	}
+ 	else if (jugadorResultado2 > 21) {
+ 		alert('Perdiste el juego!');
+ 	}
+ 	else if(jugadorResultado2 < 21 && jugadorResultado2 > maquinaResultado2){
+ 		alert('Ganaste!');
+ 	}
+ 	else if(jugadorResultado2 < 21 && jugadorResultado2 < maquinaResultado2 && maquinaResultado2 <= 21){
+ 		alert('Perdiste el juego!');
+ 	}
+ 	else if(jugadorResultado2 < 21 && jugadorResultado2 < maquinaResultado2 && maquinaResultado2 > 21){
+ 		alert('Ganaste!');
+ 	}let
